@@ -1,4 +1,8 @@
-import { View, Image, Text, StyleSheet } from "react-native";
+import { View, Image, Text, StyleSheet, Dimensions } from "react-native";
+
+const CARD_MARGIN = 8;
+const SCREEN_WIDTH = Dimensions.get('window').width;
+const CARD_WIDTH = (SCREEN_WIDTH / 2) - (CARD_MARGIN * 3);
 
 export const ItemCard = ({ item }: { item: any }) => (
   <View style={styles.card}>
@@ -15,8 +19,8 @@ export const ItemCard = ({ item }: { item: any }) => (
 
 const styles = StyleSheet.create({
   card: {
-    flex: 1,
-    marginHorizontal: 8,
+     width: CARD_WIDTH,
+    marginHorizontal: CARD_MARGIN,
     marginBottom: 16,
     backgroundColor: '#fff',
     borderRadius: 12,
@@ -26,7 +30,7 @@ const styles = StyleSheet.create({
   cardImage: {
     width: '100%',
     height: 150,
-     resizeMode: 'contain',
+    resizeMode: 'contain',
   },
   cardBody: {
     padding: 10,
@@ -46,5 +50,6 @@ const styles = StyleSheet.create({
   },
   badgeText: { fontSize: 12, color: '#555' },
 });
+
 
 
