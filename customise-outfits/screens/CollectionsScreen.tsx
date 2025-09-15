@@ -4,11 +4,6 @@ import { items, categories } from "../data/data";
 import { Chip } from "../components/Chip";
 import { ItemCard } from "../components/ItemCard";
 
-/**
- * Collections:
- *  - Think of these as all items grouped by category (like your first screenshot).
- *  - User can filter by category only.
- */
 export default function CollectionsScreen() {
   const [selectedCategory, setSelectedCategory] = useState<string>(categories[0]);
 
@@ -20,7 +15,6 @@ export default function CollectionsScreen() {
 
   return (
     <View style={styles.container}>
-      {/* Category filter row */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={true}
@@ -38,7 +32,6 @@ export default function CollectionsScreen() {
         ))}
       </ScrollView>
 
-      {/* Item grid */}
       <FlatList
         data={filtered}
         keyExtractor={(item) => item.id}
@@ -59,3 +52,4 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
 });
+
