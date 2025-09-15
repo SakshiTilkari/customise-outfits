@@ -1,4 +1,3 @@
-// screens/ItemsScreen.tsx
 import React, { useState, useMemo } from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
 import RNPickerSelect from 'react-native-picker-select';
@@ -42,7 +41,6 @@ export default function ItemsScreen() {
   );
 }
 
-/** Reusable dropdown styled like a soft pill */
 function Dropdown({
   placeholder,
   items,
@@ -92,3 +90,4 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
   },
 });
+
