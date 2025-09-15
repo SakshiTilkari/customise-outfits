@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   cardImage: {
     width: '100%',
     height: 150,
-    resizeMode: 'cover',
+     resizeMode: 'contain',
   },
   cardBody: {
     padding: 10,
@@ -46,4 +46,5 @@ const styles = StyleSheet.create({
   },
   badgeText: { fontSize: 12, color: '#555' },
 });
+
 
