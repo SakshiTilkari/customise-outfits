@@ -1,4 +1,3 @@
-// SavedScreen.tsx
 import React, { useState, useMemo } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import CollectionsScreen from "./CollectionsScreen";
@@ -12,7 +11,6 @@ export default function SavedScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: "#fff" }}>
-      {/* --- Top segment --- */}
       <View style={styles.tabRow}>
         {tabs.map((t) => (
           <TouchableOpacity key={t} onPress={() => setActiveTab(t)}>
@@ -23,7 +21,6 @@ export default function SavedScreen() {
         ))}
       </View>
 
-      {/* --- Tab Content --- */}
       {activeTab === "Collections" && <CollectionsScreen />}
       {activeTab === "Outfits" && <OutfitsScreen />}
       {activeTab === "Items" && <ItemsScreen />}
@@ -42,3 +39,4 @@ const styles = StyleSheet.create({
   tabText: { fontSize: 16, color: "#888" },
   tabActive: { color: "#000", fontWeight: "bold" },
 });
+
