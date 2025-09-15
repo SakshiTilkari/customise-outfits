@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   chipText: {
     color: '#333',
-    fontWeight: '600', // same weight for both
+    fontWeight: '600', 
     fontSize: 13,
   },
   chipTextSelected: {
@@ -46,3 +46,4 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
 });
+
