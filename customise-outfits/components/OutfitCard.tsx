@@ -6,7 +6,6 @@ const CARD_WIDTH = (Dimensions.get('window').width - CARD_MARGIN * 3) / 2;
 export const OutfitCard = ({ outfit }: { outfit: any }) => (
   <View style={styles.card}>
     <View style={styles.imagesRow}>
-      {/* Arrange outfit images in a 2-column grid */}
       {['top', 'bottom', 'footwear', 'outerwear'].map((key) =>
         outfit[key] ? (
           <Image key={key} source={outfit[key]} style={styles.image} />
@@ -29,7 +28,7 @@ export const OutfitCard = ({ outfit }: { outfit: any }) => (
 const styles = StyleSheet.create({
   card: {
     width: CARD_WIDTH,
-    marginBottom: 12, // just a small gap between cards
+    marginBottom: 12, 
     backgroundColor: '#fff',
     borderRadius: 16,
     padding: 10,
@@ -73,3 +72,4 @@ const styles = StyleSheet.create({
     color: '#333',
   },
 });
+
