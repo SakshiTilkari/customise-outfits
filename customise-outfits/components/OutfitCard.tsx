@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     height: (CARD_WIDTH - 20) / 2,
     borderRadius: 10,
     marginBottom: 10,
+    resizeMode: 'contain'
   },
   title: {
     fontSize: 16,
@@ -72,4 +73,5 @@ const styles = StyleSheet.create({
     color: '#333',
   },
 });
+
 
