@@ -4,7 +4,7 @@
 - Open the Snack link and run on **Web**:  
   [https://snack.expo.dev/@sakshi_3503/customise-outfits](https://snack.expo.dev/@sakshi_3503/customise-outfits)
 - Or clone locally:
-  - `git clone https://github.com/<your-username>/<repo-name>.git`
+  - `git clone https://github.com/SakshiTilkari/customise-outfits`
   - `cd <repo-name>`
   - `npm install`
   - `npm start` (press **w** to launch web)
