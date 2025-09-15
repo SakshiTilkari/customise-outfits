@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     backgroundColor: '#fff',
     borderRadius: 12,
-    overflow: 'hidden',       // keeps image corners rounded
+    overflow: 'hidden',
     elevation: 2,
   },
   cardImage: {
@@ -46,3 +46,4 @@ const styles = StyleSheet.create({
   },
   badgeText: { fontSize: 12, color: '#555' },
 });
+
