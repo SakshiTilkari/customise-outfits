@@ -15,7 +15,6 @@ export default function OutfitsScreen() {
 
   return (
     <View style={styles.container}>
-      {/* Category filter row */}
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={true}
@@ -33,7 +32,6 @@ export default function OutfitsScreen() {
         ))}
       </ScrollView>
 
-      {/* outfit grid */}
       <FlatList
         data={filtered}
         keyExtractor={(item) => item.id}
@@ -54,3 +52,4 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
 });
+
